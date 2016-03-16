@@ -1,4 +1,5 @@
 #include<stdio.h>
+//#include<string.h>
 void main()
 {
 	int Password=0,Number=0,Price=58,i=0;
@@ -7,7 +8,7 @@ void main()
 		if(i>3)
 		return;
 		i++;
-		puts("please input Password:");
+		printf("please input Password:");
 		scanf("%d",&Password);
 		
 	}
@@ -16,11 +17,12 @@ void main()
 	{
 		do
 		{
-			puts("Please input a number between 1 and 100: ");
+			printf("Please input a number between 1 and 100: ");
 			scanf("%d",&Number);
 			printf("your input number is%d\n",Number);
 		}
-		while(!(Number>=1&&Number<=100))；
+		while(!(Number>=1&&Number<=100))
+		;
 	    if(Number>=90)
 		{
 			printf("too bigger!Press any key to try again!\n");
@@ -45,7 +47,7 @@ void main()
 			}
 			else if(Number<Price||Number>Price)
 				printf("sorry, Press any key to try again!\n");
-			getch();
+			//getch();
 		}
 	}
 }
